@@ -30,6 +30,7 @@ namespace Plugin.LocalNotifications
             builder.SetContentTitle(title);
             builder.SetContentText(body);
             builder.SetAutoCancel(true);
+            builder.SetPriority((int)NotificationPriority.Max);
 
             if (NotificationIconId != 0)
             {
